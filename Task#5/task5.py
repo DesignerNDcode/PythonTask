@@ -9,7 +9,6 @@ print(a / b, "Divided")
 print(a * b, "multiplied")
 print(a // b, "floor divided")
 
-
 # -----------Task2-----------
 print('-----------Task2-----------')
 first = int(input('Enter first argument'))
@@ -29,15 +28,14 @@ print("BMI calc in metrics ")
 weight = float(input("enter weight in kilograms"))
 height = float(input("enter height in cm"))
 
-print( weight / (height/100)**2 , "Answer in metric")
+print(weight / (height / 100) ** 2, "Answer in metric")
 
 print("BMI calc in US------- ")
 
-
-
 print("BMI calc in us ")
-# could not find
-
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: '))
+print('Your body mass index is: ', (weight / (height ** 2)) * 703)
 
 # -----------Task5-----------
 print('-----------Task5-----------')
@@ -46,12 +44,20 @@ print('Welcome to Converting Calculator')
 weight = float(input("Enter your weight in kg"))
 print("your weight in pounds is", weight * 2.2)
 
-print('-----------Task6-----------')
-print('calculate area of trapezium')
-# could not find
+print('-----------AREA OF TRAPEZOID-----------')
+b1 = int(input('Enter the length of base 1: '))
+b2 = int(input('Enter the length of base 2: '))
+height1 = int(input('Enter the height of trapezoid: '))
+print('The area of the given trapezoid = ', ((b1 + b2) / 2) * height1)
 
+print('-----------AREA OF PARRALLELOGRAM-----------')
+base = int(input('Enter the length of base: '))
+height = int(input('Enter the height of parrallelogram: '))
+print('The area of the given parrallelogram = ', base * height)
 
+print('-----------AREA  AND VOLUME OF CYLINDER-----------')
 
-
-
-
+radius = int(input('Enter the radius of cylinder: '))
+hc = int(input('Enter the height of the cylinder: '))
+print('Surface area of cylinder = ', 2 * 3.14 * (radius + hc))
+print('Volume of cylinder = ', 3.14 * (radius ** 2) * hc)
