@@ -1,0 +1,47 @@
+while True:
+    options = ['tv "1"', 'bulbs "2" ', 'fridge "3"', 'fans "4"', 'ac "5"', 'exit "6"']
+    print(options)
+    sel_option = int(input("which device you have to control? choose by serial no"))
+
+    if sel_option == 1:
+        while True:
+            selection = input("do want to turn it 'on' or 'off' or 'exit' ")
+            if selection == 'on':
+                print('tv turned on')
+            elif selection == 'off':
+                print('tv turned off')
+            elif selection == 'exit':
+                break
+
+    if sel_option == 2:
+        while True:
+            selection = input("do want to turn it 'on' or 'off' or 'exit' ")
+            if selection == 'on':
+                print('bulbs turned on')
+            elif selection == 'off':
+                print('bulbs turned off')
+            elif selection == 'exit':
+                break
+
+    if sel_option == 4:
+        while True:
+            selection = input("do want to turn it 'on' or 'off' or 'exit' ")
+            if selection == 'on':
+                print('fridge turned on')
+            elif selection == 'off':
+                print('fridge turned off')
+            elif selection == 'exit':
+                break
+
+    if sel_option == 5:
+        while True:
+            selection = input("do want to turn it 'on' or 'off' or 'exit' ")
+            if selection == 'on':
+                print('ac turned on')
+            elif selection == 'off':
+                print('ac turned off')
+            elif selection == 'exit':
+                break
+    if sel_option == 6:
+        print("system off")
+        break
