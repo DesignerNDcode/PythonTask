@@ -1,0 +1,110 @@
+print("============Task1============")
+print("Wellcome to Vending Machine")
+
+ice_cream = ['mango', 'pista', 'orange', 'rainbow', 'vanilla']
+chocolates = ['dairy milk', 'perk', 'kitkat', 'twix', 'mars']
+chips = ('lays', 'kurkure', 'asli baba', 'kurleez', 'wavy')
+coldrink = ('pepsi', 'marinda', '7up', 'deo', 'sprite')
+juice = ('slice', 'apple', 'red grapes', 'chounsa', 'orange')
+
+start = 0
+
+while start <= 1000:
+
+    while True:
+
+        # ===============ice_cream===============
+        print(" '1' for ice cream", " '2' for chocolates", "'3' for chips", "'4' for colddrink", " '5' for juices",)
+        choice = input("Select the product you want")
+        if choice == '1':
+            fl = input("which ice-cream flavour you want")
+            if fl in ice_cream:
+                qty = int(input("select the quantity you want"))
+                if qty <= 40:
+                    confirm = input("Are you sure, confirm this order with 'yes' or 'no' ")
+                    if confirm == 'yes':
+                        print("==========Take your order==========", "we would love to get order again")
+                    else:
+                        print("Okay, we would love to get order again")
+
+                else:
+                    print("sorry, product out of stock")
+            else:
+                print("==============flavour not available==============")
+                print("Choose again")
+
+
+# chocolates
+        elif choice == '2':
+            fl = input("which chocolate you want")
+            if fl in chocolates:
+                qty = int(input("select the quantity you want"))
+                if qty <= 40:
+                    confirm = input("Are you sure, confirm this order with 'yes' or 'no' ")
+                    if confirm == 'yes':
+                        print("==========Take your order==========", "we would love to get order again")
+                    else:
+                        print("Okay, we would love to get order again")
+
+                else:
+                    print("sorry, product out of stock")
+            else:
+                print("==============flavour not available==============")
+                print("Choose again")
+
+# chips
+        elif choice == '3':
+            fl = input("which chips you want")
+            if fl in chips:
+                qty = int(input("select the quantity you want"))
+                if qty <= 40:
+                    confirm = input("Are you sure, confirm this order with 'yes' or 'no' ")
+                    if confirm == 'yes':
+                        print("==========Take your order==========", "we would love to get order again")
+                    else:
+                        print("Okay, we would love to get order again")
+
+                else:
+                    print("sorry, product out of stock")
+            else:
+                print("==============flavour not available==============")
+                print("Choose again")
+
+# cold-drink
+        elif choice == '4':
+            fl = input("which cold-drink you want")
+            if fl in coldrink:
+                qty = int(input("select the quantity you want"))
+                if qty <= 40:
+                    confirm = input("Are you sure, confirm this order with 'yes' or 'no' ")
+                    if confirm == 'yes':
+                        print("==========Take your order==========", "we would love to get order again")
+                    else:
+                        print("Okay, we would love to get order again")
+
+                else:
+                    print("sorry, product out of stock")
+            else:
+                print("==============flavour not available==============")
+                print("Choose again")
+
+# juice
+        elif choice == '5':
+            fl = input("which juice you want")
+            if fl in juice:
+                qty = int(input("select the quantity you want"))
+                if qty <= 40:
+                    confirm = input("Are you sure, confirm this order with 'yes' or 'no' ")
+                    if confirm == 'yes':
+                        print("==========Take your order==========", "we would love to get order again")
+                    else:
+                        print("Okay, we would love to get order again")
+
+                else:
+                    print("sorry, product out of stock")
+            else:
+                print("==============flavour not available==============")
+                print("Choose again")
+
+        else:
+            print("Wrong Option chosen")
