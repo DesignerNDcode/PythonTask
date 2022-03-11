@@ -1,0 +1,25 @@
+print("============Task2============")
+
+current_bal = 5000
+while True:
+
+    options = int(input("Enter Your Choice, 1 Deposit, 2. Withdraw, 3. Check Balance, 4. Exit "))
+
+    if options == 1:
+        dep = int(input("Enter deposit amount "))
+        current_bal += dep
+        print("Your New balance is", current_bal)
+    elif options == 2:
+        Wd = int(input("Enter Withdraw Amount "))
+        if Wd <= current_bal:
+            print("You have withdraw your amount ", Wd)
+            current_bal = current_bal-Wd
+        else:
+            print("You don't have enough balance")
+    elif options == 3:
+        print("Your Current balance is ", current_bal)
+    elif options == 4:
+        print("Okay, Thankyou")
+        break
+    else:
+        print("wrong choice")
