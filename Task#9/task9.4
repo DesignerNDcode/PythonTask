@@ -1,0 +1,17 @@
+print("Ac is off")
+while True:
+    ac_stat = int(input("want to on/off? enter 1 for on and 2 for off"))
+    if ac_stat == 1:
+        print("ac is running")
+        print("compressor is on now")
+        while True:
+
+            temp = int(input("What is temperature of ac now?"))
+
+            if temp <= 15:
+                print("Compresser off")
+            else:
+                print("Compresser is on")
+
+    if ac_stat == 2:
+        print("ac is off")
